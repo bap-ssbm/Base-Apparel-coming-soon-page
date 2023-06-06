@@ -1,0 +1,16 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 35px;
+}
+@media (min-width:map-get($breakpoints,'sm')) {
+    .main{
+        padding: 0px;
+        
+    }
+    .overallwrapper{
+        width: 70%;
+        max-width: 450px;
+    }
+}

@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    font-family: inherit;
+    margin: 0;
+}
+body{
+    max-width: 600px;
+    background: map-get($colors, 'gradients', 'one' );
+    background-size: contain;
+}
+@media (min-width:map-get($breakpoints,'sm')) {
+    body{
+        background-image: url('../images/bg-pattern-desktop.svg');
+        max-width: none;
+    }
+    .wrapper{
+        display: flex;
+        width: 100%;
+        &__left{
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

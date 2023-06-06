@@ -1,0 +1,22 @@
+.imageWrapper{
+    width: 100%;
+    &__img{
+        width: 100%;
+    }
+}
+.desktopImg{
+    display: none;
+}
+@media (min-width:map-get($breakpoints,'sm')){
+    .imageWrapper{
+        display: none;
+    }
+    .desktopImg{
+        display: flex;
+        height: 100dvh;
+        &__img{
+            width: auto;
+            height: 100%;
+        }
+    }
+}

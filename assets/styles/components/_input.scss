@@ -1,0 +1,24 @@
+.main__form__input{
+    font-size: map-get($map: $fontSize, $key: 'md');
+    background: none;
+    border: 1px solid map-get($colors, 'primary', 'desaturated-red');
+    outline: none;
+    padding: 15px 20px ; 
+    padding-right: 90px;
+    border-radius: 30px;
+    width: 100%;
+    &--error{
+        border: 2px solid map-get($colors, 'primary', 'soft-red');
+    }
+    &::placeholder{
+        color: map-get($colors, 'primary', 'desaturated-red');
+        opacity: 40%;
+    }
+}
+@media (min-width:map-get($breakpoints,'sm')){
+    .main__form__input{
+        font-size: map-get($map: $fontSize, $key: 'lg');
+        padding: 20px 30px;
+        padding-right: 90px;
+    }
+}

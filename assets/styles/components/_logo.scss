@@ -1,0 +1,15 @@
+.logo{
+    padding: 30px;
+    &__img{
+        height: 21px;
+    }
+}
+@media (min-width:map-get($breakpoints,'sm')){
+    .logo{
+        padding: 80px 0;
+        margin-bottom: 5dvh;
+        &__img{
+            height: 30px;
+        }
+    }
+}
